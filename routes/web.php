@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix' => 'apps', 'as' => 'apps.', 'middleware' => ['auth']], function(){
+    // dashboard route
+    Route::get('/dashboard', App\Http\Controllers\Apps\DashboardController::class);
+});

@@ -14,11 +14,15 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "@headlessui/react": "^1.7.14",
         "@inertiajs/inertia": "^0.11.0",
         "@inertiajs/inertia-react": "^0.8.1",
         "@inertiajs/progress": "^0.2.7",
         "@tabler/icons-react": "^2.20.0",
+        "chart.js": "^4.3.0",
         "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+        "react-chartjs-2": "^5.2.0",
+        "react-dom": "^17.0.2",
+        "react-icons": "^4.9.0"
     }
 }
