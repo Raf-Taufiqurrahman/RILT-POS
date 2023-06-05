@@ -13,5 +13,5 @@ createInertiaApp({
 
 InertiaProgress.init({
     delay: 1,
-    color: '#ffffff',
+    color: '#4F709C',
 });

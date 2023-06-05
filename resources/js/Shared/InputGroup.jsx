@@ -1,7 +1,7 @@
 import { IconExclamationCircle } from '@tabler/icons-react'
 import React from 'react'
 
-export default function TextInput({type, icon, placeholder, errors, ...props}) {
+export default function InputGroup({type, icon, placeholder, errors, ...props}) {
     return (
         <div className='relative'>
             <input type={type} className='py-2 px-4 pl-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:z-10 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500 text-gray-700' placeholder={placeholder} {...props}/>

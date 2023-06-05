@@ -4,7 +4,7 @@ import Permission from '../Utils/Permission'
 import ListItem from './ListItem'
 import { HiReceiptPercent, HiUsers } from 'react-icons/hi2';
 import { HiCollection, HiShoppingBag, HiUserCircle, HiViewGrid, HiPresentationChartLine, HiPresentationChartBar,
-HiUserGroup,    HiIdentification } from 'react-icons/hi';
+HiUserGroup, HiIdentification } from 'react-icons/hi';
 export default function Sidebar() {
 
     // define links dashboard
@@ -86,9 +86,9 @@ export default function Sidebar() {
     ]
 
     return (
-        <div className="h-screen w-72 bg-white border-r border-gray-200 pt-7 pb-10">
+        <div className="h-screen w-80 bg-[#1F2937] border-r border-gray-200 pt-7 pb-10 overflow-auto">
             <div className="px-6">
-                <a className="flex-none text-xl font-semibold text-gray-800">
+                <a className="flex-none text-xl font-semibold text-gray-50">
                     POS (POINT OF SALES)
                 </a>
             </div>

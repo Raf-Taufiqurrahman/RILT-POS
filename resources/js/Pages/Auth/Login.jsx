@@ -1,7 +1,7 @@
 import { Head, useForm } from '@inertiajs/inertia-react'
 import React from 'react'
 import AuthLayout from '../../Layouts/AuthLayout'
-import TextInput from '../../Shared/TextInput'
+import InputGroup from '../../Shared/InputGroup'
 import {  IconLockPin, IconMail } from '@tabler/icons-react'
 import Save from '../../Shared/Save'
 import Label from '../../Shared/Label'
@@ -27,7 +27,7 @@ export default function Login() {
                 <form onSubmit={submit}>
                     <div className='mb-3'>
                         <Label title={'Email'}/>
-                        <TextInput
+                        <InputGroup
                             type={'email'}
                             icon={(<IconMail
                             strokeWidth={'1.2'}
@@ -39,7 +39,7 @@ export default function Login() {
                     </div>
                     <div className='mb-3'>
                         <Label title={'Password'}/>
-                        <TextInput
+                        <InputGroup
                             type={'password'}
                             icon={(<IconLockPin
                             strokeWidth={'1.2'} size={'20'}/>)}

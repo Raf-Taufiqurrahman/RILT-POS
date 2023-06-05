@@ -8,10 +8,8 @@ export default function MainLayout({children}) {
     // destruct props
     const {auth} = usePage().props;
 
-    console.log(auth)
-
     return (
-        <div className='w-full min-h-screen flex flex-row'>
+        <div className='w-full min-h-screen flex flex-row overflow-auto'>
             <Sidebar/>
             <div className='w-full'>
                 <div className='w-full border-b bg-white py-2 px-4'>
