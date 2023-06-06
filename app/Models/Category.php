@@ -33,8 +33,6 @@ class Category extends Model
      */
     public function scopeSearch($query)
     {
-        $query->when(request()->search, function($search){
-            $search->where('name', 'like', '%'. request()->search . '%');
-        });
+        return $query->when(request()->search, fn($search) => $search->where('name', 'like', '%'. request()->search . '%'));
     }
 }

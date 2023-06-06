@@ -26,4 +26,6 @@ Route::group(['prefix' => 'apps', 'as' => 'apps.', 'middleware' => ['auth']], fu
     Route::get('/permission', App\Http\Controllers\Apps\PermissionController::class);
     // role route
     Route::resource('/role', App\Http\Controllers\Apps\RoleController::class);
+    // customer route
+    Route::resource('/customer', App\Http\Controllers\Apps\CustomerController::class);
 });
