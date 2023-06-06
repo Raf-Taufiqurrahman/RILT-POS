@@ -22,4 +22,6 @@ Route::group(['prefix' => 'apps', 'as' => 'apps.', 'middleware' => ['auth']], fu
     Route::get('/dashboard', App\Http\Controllers\Apps\DashboardController::class);
     // category route
     Route::resource('/category', App\Http\Controllers\Apps\CategoryController::class);
+    // permission route
+    Route::get('/permission', App\Http\Controllers\Apps\PermissionController::class);
 });
