@@ -3,7 +3,7 @@ import React  from 'react'
 const Card = ({icon, title, children}) => {
     return (
         <>
-            <div className='p-4 bg-white rounded-t-lg shadow-sm'>
+            <div className='p-4 bg-white rounded-t-lg border border-b-0'>
                 <div className='flex items-center gap-2 uppercase text-gray-700 font-semibold text-sm'>
                     {icon} {title}
                 </div>
@@ -18,8 +18,8 @@ const Card = ({icon, title, children}) => {
 
 const Table = ({ children, className }) => {
     return (
-        <div className={`${className} flex flex-col shadow-sm`}>
-            <div className="overflow-x-auto rounded-lg scrollbar-hide">
+        <div className={`${className} flex flex-col border rounded-b-lg`}>
+            <div className="overflow-x-auto scrollbar-hide">
                 <div className="inline-block w-full align-middle">
                     <table className="w-full">
                         {children}
@@ -58,7 +58,7 @@ const Th = ({ className, children }) => {
     return (
         <th
             scope="col"
-            className={`${className}  whitespace-nowrap px-6 py-2 text-left text-sm font-semibold text-gray-700`}
+            className={`${className}  whitespace-nowrap px-6 py-2 text-left text-sm font-semibold text-gray-700 border-b`}
         >
             {children}
         </th>

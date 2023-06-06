@@ -13,7 +13,7 @@ export default function Index() {
 
     return (
         <>
-            <Head title='Category - POS'/>
+            <Head title='Permission - POS'/>
             <MainLayout>
                 <div className='flex justify-end items-center mb-3'>
                     <div className='w-1/2'>

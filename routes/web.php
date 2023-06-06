@@ -24,4 +24,6 @@ Route::group(['prefix' => 'apps', 'as' => 'apps.', 'middleware' => ['auth']], fu
     Route::resource('/category', App\Http\Controllers\Apps\CategoryController::class);
     // permission route
     Route::get('/permission', App\Http\Controllers\Apps\PermissionController::class);
+    // role route
+    Route::resource('/role', App\Http\Controllers\Apps\RoleController::class);
 });

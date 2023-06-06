@@ -20,8 +20,8 @@ export default function Delete({ url, id, label }) {
                 Inertia.delete(`${url}/${id}`)
 
                 Swal.fire({
-                    title: 'Berhasil!',
-                    text: 'Data berhasil dihapus!',
+                    title: 'Success!',
+                    text: 'Data has been deleted!',
                     icon: 'success',
                     showConfirmButton: false,
                     timer: 1500

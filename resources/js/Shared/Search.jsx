@@ -18,7 +18,7 @@ export default function Search({url}) {
         <>
             <form onSubmit={searchData}>
                 <div className='relative'>
-                    <input type='text' value={search} onChange={(e) => setSearch(e.target.value)} className='py-2 px-4 pr-11 block w-full rounded-lg text-sm focus:z-10 bg-white focus:outline-none focus:ring-1 focus:ring-sky-500 text-gray-700 shadow-sm'/>
+                    <input type='text' value={search} onChange={(e) => setSearch(e.target.value)} className='py-2 px-4 pr-11 block w-full rounded-lg text-sm focus:z-10 bg-white focus:outline-none focus:ring-1 focus:ring-sky-500 text-gray-700 border'/>
                     <div className='absolute inset-y-0 right-0 flex items-center pointer-events-none z-20 pr-4'>
                         <HiSearch size={'18'} className='text-gray-500'/>
                     </div>
