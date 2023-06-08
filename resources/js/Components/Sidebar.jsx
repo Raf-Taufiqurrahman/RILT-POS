@@ -88,8 +88,8 @@ export default function Sidebar() {
     return (
         <div className="h-screen w-80 bg-[#1F2937] border-r border-gray-200 pt-7 pb-10 overflow-auto">
             <div className="px-6">
-                <a className="flex-none text-xl font-semibold text-gray-50">
-                    POS (POINT OF SALES)
+                <a className="flex-none text-xl font-semibold text-gray-50 uppercase">
+                    Point of Sales
                 </a>
             </div>
             <nav className="p-6 w-full flex flex-col flex-wrap">

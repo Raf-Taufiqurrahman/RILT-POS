@@ -59,4 +59,12 @@ class User extends Authenticatable
             ];
         });
     }
+
+    /**
+     * local scope search
+     */
+    public function scopeSearch($query)
+    {
+        return $query->when(request()->search, fn($search) => $search->where('name', 'like', '%'. request()->search . '%'));
+    }
 }
