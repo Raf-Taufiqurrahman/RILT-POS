@@ -35,7 +35,7 @@ export default function Edit() {
 
     return (
         <>
-            <Head title='Update User - POS'/>
+            <Head title='Edit User - POS'/>
             <MainLayout>
                 <div className='flex justify-center items-center'>
                     <div className='w-4/6'>

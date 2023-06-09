@@ -17,6 +17,9 @@ class Customer extends Model
      */
     protected $fillable = ['name', 'no_telp', 'address'];
 
+    /**
+     * local scope search
+     */
     public function scopeSearch($query)
     {
         return $query->when(request('search'), fn($search) => $search->where('name', 'like', '%'. request('search') . '%'));

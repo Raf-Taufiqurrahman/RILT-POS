@@ -3,13 +3,12 @@ import React from 'react'
 import MainLayout from '../../Layouts/MainLayout'
 import Table from '../../Shared/Table'
 import { BsDatabaseFillX } from "react-icons/bs";
-import {HiCollection} from 'react-icons/hi';
+import { HiUserGroup } from 'react-icons/hi';
 import Pagination from '../../Shared/Pagination';
 import Add from '../../Shared/Add';
 import Search from '../../Shared/Search';
 import Edit from '../../Shared/Edit';
 import Delete from '../../Shared/Delete';
-import { HiUsers } from 'react-icons/hi2';
 export default function Index() {
 
     // destruct props
@@ -18,7 +17,7 @@ export default function Index() {
 
     return (
         <>
-            <Head title='Customer - POS'/>
+            <Head title='User - POS'/>
             <MainLayout>
                 <div className='flex gap-4 justify-between items-center mb-3'>
                     <Add label={'Add New User'} url={'/apps/user/create'}/>
@@ -26,7 +25,7 @@ export default function Index() {
                         <Search url={'/apps/user'}/>
                     </div>
                 </div>
-                <Table.Card icon={<HiUsers size={'18'} className='text-gray-700'/>} title={'users'}>
+                <Table.Card icon={<HiUserGroup size={'18'} className='text-gray-700'/>} title={'users'}>
                     <Table>
                         <Table.Thead className='bg-gray-50'>
                             <tr>
