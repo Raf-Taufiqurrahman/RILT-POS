@@ -45,7 +45,7 @@ export default function Edit() {
 
     return (
         <>
-            <Head title='Create Product - POS'/>
+            <Head title='Edit Product - POS'/>
             <MainLayout>
                 <div className='flex justify-center items-center'>
                     <div className='w-4/6'>
