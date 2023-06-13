@@ -1,4 +1,3 @@
-import { IconChartInfographic, IconDeviceDesktopAnalytics, IconFolders, IconReceipt, IconShoppingBag, IconStack2, IconUserBolt, IconUserCheck, IconUserCircle, IconUsers } from '@tabler/icons-react'
 import React from 'react'
 import Permission from '../Utils/Permission'
 import ListItem from './ListItem'

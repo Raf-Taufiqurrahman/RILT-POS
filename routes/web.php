@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Transaction;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +27,10 @@ Route::group(['prefix' => 'apps', 'as' => 'apps.', 'middleware' => ['auth']], fu
     Route::resource('/product', App\Http\Controllers\Apps\ProductController::class);
     // customer route
     Route::resource('/customer', App\Http\Controllers\Apps\CustomerController::class);
+    // transaction route
+    Route::controller(App\Http\Controllers\Apps\TransactionController::class)->as('transaction.')->group(function(){
+        Route::get('/transaction', 'index')->name('index');
+    });
     // permission route
     Route::get('/permission', App\Http\Controllers\Apps\PermissionController::class);
     // role route

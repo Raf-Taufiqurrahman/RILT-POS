@@ -2,9 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Product extends Model
 {
@@ -19,6 +20,16 @@ class Product extends Model
     protected $fillable = [
         'image', 'name', 'barcode', 'description', 'buy_price', 'sell_price', 'category_id', 'stock'
     ];
+
+    /**
+     * accessor image category
+     */
+    protected function image(): Attribute
+    {
+        return Attribute::make(
+            get: fn ($value) => asset('/storage/product/' . $value)
+        );
+    }
 
     /**
      * local scope search

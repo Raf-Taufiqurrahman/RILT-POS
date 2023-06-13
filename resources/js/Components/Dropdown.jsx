@@ -1,8 +1,7 @@
 import React from 'react'
 import { Menu } from '@headlessui/react'
-import { Link } from '@inertiajs/inertia-react'
 import { Inertia } from '@inertiajs/inertia'
-import { IconHome2, IconLogout, IconChevronDown } from '@tabler/icons-react'
+import { IconLogout, IconChevronDown } from '@tabler/icons-react'
 export default function Dropdown({auth}) {
 
     // define method logout
